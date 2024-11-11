@@ -20,6 +20,8 @@ app.use("/", perfil);
 app.use("/", produto);
 app.use("/", usuario);
 
+/*
 app.listen(port, () => {
     console.log(`Servidor iniciado na porta ${port}`);
 });
+*/
