@@ -1,0 +1,23 @@
+{
+  "name": "pitbackend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "start": "./app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "mssql": "^10.0.4",
+    "save": "^2.9.0",
+    "sequelize": "^6.37.5"
+  },
+  "devDependencies": {},
+  "description": ""
+}
