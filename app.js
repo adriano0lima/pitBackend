@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
 
+const serverless = require("serverless-http");
+
 const port = process.env.PORT || 3001;
 
 
@@ -19,9 +21,7 @@ app.use("/", perfil);
 app.use("/", produto);
 app.use("/", usuario);
 
-module.exports = async (req, res) => {
-    res.status(200).send("Olá Mundo! \n servidor iniciano na porta:" + port );
-  };
+module.exports = serverless(app);
   
 /*
 app.listen(port, () => {
