@@ -4,7 +4,6 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 
-console.log("Olá Mundo!!")
 
 app.use(express.json());
 
@@ -20,6 +19,10 @@ app.use("/", perfil);
 app.use("/", produto);
 app.use("/", usuario);
 
+module.exports = async (req, res) => {
+    res.status(200).send("Olá Mundo! \n servidor iniciano na porta:" + port );
+  };
+  
 /*
 app.listen(port, () => {
     console.log(`Servidor iniciado na porta ${port}`);
